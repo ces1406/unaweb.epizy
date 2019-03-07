@@ -1,0 +1,28 @@
+<h2>Busqueda de foros de opinión:</h2>
+<h6>(tener en cuenta que si se dejan todas las opciones en blanco se listarán todos los foros creados)</h6>
+<br/>
+<form class="form-horizontal" id="unFormulario1" action="/Seccion/irOpiniones/search/1" method="POST">
+	<fieldset>
+	<div class="form-group row" >
+		<label class="col-sm-3 col-form-label control-label" for="materia1">Materia:</label>
+		<select class="col-sm-9" id="materia1" name="unaMateria">
+			{listaDeMaterias}
+		</select>
+	</div>
+	<div class="form-group row" >
+		<label class="col-sm-3 col-form-label control-label" for="catedra1">Cátedra:</label>
+		<div class="" id="">
+			<input type="text" name="unaCatedra" id="catedra1" placeholder="nombre de la cátedra" maxlength="60">
+			<small id="avisoCatedra" class="form-text text-muted"></small>
+		</div>
+	</div>
+	<div class="form-group row" >
+		<label class="col-sm-3 col-form-label control-label" for="profesor1">Nombre de un profesor</label>
+		<div class="" id="">
+			<input type="text" name="unProfesor" id="profesor1" placeholder="apellido de algun profesor de la cátedra" size="30" maxlength="100">
+			<small id="avisoSede" class="form-text text-muted"></small>
+		</div>
+	</div>
+	<input type="submit" id="buscarHilo" value="Buscar" class="btn btn-secondary enlace">
+	</fieldset>
+</form>

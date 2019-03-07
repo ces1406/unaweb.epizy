@@ -1,0 +1,17 @@
+<form class="form-horizontal" id="unFormulario" action="/RegistrarUsuario/ConfigPerfil/cambiarFace" method="POST" enctype="multipart/form-data"> 
+	<div class="form-group row " id="">
+		<label class="" for="unaPassword1" >Ingresar link a tu facebook:</label>
+		<div class="">
+			<input type="text" class="form-control" name="unFace" id="face" required>
+			<small id="avisoPass1" class="form-text text-muted"></small>
+		</div>
+	</div>
+    <div class="form-group row " id="">
+		<label class="" for="unaPassword0" >Confirma tu contraseña:</label>
+		<div class="">
+			<input type="password" class="form-control" name="unaPassword0" id="password0" required>
+			<small id="avisoPass0" class="form-text text-muted">entre 6 y 8 caracteres</small>
+		</div>
+	</div>
+    <input type="submit" id="Registrame" value="Listo" class="btn btn-primary bg-dark">
+</form>

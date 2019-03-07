@@ -1,0 +1,24 @@
+<form class="form-horizontal" id="unFormulario" action="/RegistrarUsuario/ConfigPerfil/cambiarPass" method="POST" enctype="multipart/form-data"> 
+	<div class="form-group row " id="">
+		<label class="" for="unaPassword1" >Ingresar nueva contraseña:</label>
+		<div class="">
+			<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+			<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+		</div>
+	</div>
+    <div class="form-group row " id="">
+		<label class="" for="unaPassword2" >Repetir nueva contraseña:</label>
+		<div class="">
+			<input type="password" class="form-control" name="unaPassword2" id="password2" required>
+			<small id="avisoPass2" class="form-text text-muted"></small>
+		</div>
+    </div><br/><br/>
+    <div class="form-group row " id="">
+		<label class="" for="unaPassword0" >Confirma tu antigua contraseña:</label>
+		<div class="">
+			<input type="password" class="form-control" name="unaPassword0" id="password0" required>
+			<small id="avisoPass0" class="form-text text-muted">entre 6 y 8 caracteres</small>
+		</div>
+	</div>
+    <input type="submit" id="Registrame" value="Listo" class="btn btn-primary bg-dark">
+</form>

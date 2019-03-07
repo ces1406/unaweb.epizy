@@ -1,0 +1,165 @@
+	
+		<div class="plano1" >
+    		<div class="card-body">
+    			<h2>Funciones para Administrador de Web UNA</h2>
+    		</div>
+			<div class="card-deck mb-4">
+				<div class="card border-dark mb-6 panel1" >
+					<div class="card-body">
+						<div class="card-header text-center my-0 py-0">
+							<h1 class="my-0 py-0">Usuarios</h1>
+						</div>
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2 class="card-title">Listar usuarios ordenados por apodo</h2>
+						{listado}
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2 class="card-title">Borrar un usuario </h2>
+						<form class="form-horizontal" id="borradoUsuario" action="/Administrar/borrarUsuario" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="idUsuario" placeholder="">idUsuario:</label>
+								<div class="col-sm-4">
+									<input class="form-control" placeholder="id del usuario a borrar" type="text" name="unIdUsuario" id="idUsuario" required>
+									<small id="" class="form-text text-muted">consultar en listado la idUsuario</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.:</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="BorrarUsuer" value="Borrar" class="btn btn-sm enlace">
+						</form>
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2>Deshabilitar/Suspender temporariamente a un usuario </h2>
+						<form class="form-horizontal" id="suspensionUsuario" action="/Administrar/SuspenderUsuario" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="idUsuario" placeholder="">idUsuario:</label>
+								<div class="col-sm-4">
+									<input class="form-control" placeholder="id del usuario a suspender" type="text" name="unIdUsuario" id="idUsuario" required>
+									<small id="" class="form-text text-muted">consultar en listado la idUsuario</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.:</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="BorrarUsuer" value="Suspender" class="btn btn-sm enlace">
+						</form>
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2>Habilitar a un usuario que estaba suspendido</h2>
+						<form class="form-horizontal" id="habilitadoUsuario" action="/Administrar/HabilitarUsuario" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="idUsuario" placeholder="">idUsuario:</label>
+								<div class="col-sm-4">
+									<input class="form-control" placeholder="id del usuario a habilitar" type="text" name="unIdUsuario" id="idUsuario" required>
+									<small id="" class="form-text text-muted">consultar en listado la idUsuario</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.:</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="BorrarUsuer" value="Habilitar" class="btn btn-sm enlace">
+						</form>
+
+					</div>
+				</div>
+				<div class="card border-dark mb-6 panel1" >
+					<div class="card-body">
+						<div class="card-header text-center my-0 py-0">
+							<h1 class="my-0 py-0">Secciones</h1>
+						</div>
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2 class="card-title">Crear una seccion</h2>
+						<form class="form-horizontal" id="AgregarSeccion" action="/Administrar/CrearSeccion" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="tituloSeccion" placeholder="">Titulo de la Seccion:</label>
+								<div class="col-sm-6">
+									<input class="form-control" placeholder="" type="text" name="unTituloSeccion" id="tituloSeccion" required>
+									<small id="" class="form-text text-muted">45 caracteres máximo</small></br>
+								</div>
+							</div>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="descripSeccion" placeholder="">Descripcion de la Seccion:</label>
+								<div class="col-sm-8">
+									<input class="form-control" placeholder="" type="text" name="unaDescripcionSeccion" id="descipSeccion" required>
+									<small id="" class="form-text text-muted">100 caracteres máximo</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.:</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="Crear" value="Crear" class="btn btn-sm enlace">
+						</form>
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+					</div>
+				</div>
+			</div>
+			<div class="card-deck">
+				<div class="card border-dark mb-6 panel1" >
+					<div class="card-body">
+						<div class="card-header text-center my-0 py-0">
+							<h1>Temas</h1>
+						</div>
+						<img src="/Vistas/imagenes/separador.png" class="separador my-0 py-0">
+						<h2 class="card-title ">Listar temas</h2>	
+						{listaTemas}			
+						<img src="/Vistas/imagenes/separador.png" class="separador">
+						<h2 class="card-title">Borrar un Tema</h2>
+						<form class="form-horizontal" id="borradoTema" action="/Administrar/EliminarTema" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="idTema" placeholder="">Id del tema a borrar:</label>
+								<div class="col-sm-4">
+									<input class="form-control" placeholder="" type="text" name="unIdTema" id="idTema" required>
+									<small id="" class="form-text text-muted">ver el idTema del listado de temas</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.:</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="BorrarTema" value="Borrar" class="btn btn-sm enlace">
+						</form>						
+					</div>
+				</div>
+				<div class="card border-dark mb-6 panel1">
+					<div class="card-header text-center">
+						<h1>Cursos</h1>
+					</div>
+					<img src="/Vistas/imagenes/separador.png" class="separador">
+					<h2 class="card-title">Eliminar un curso</h2>
+					<form class="form-horizontal" id="unFormulario" action="/Administrar/EliminarCurso" method="POST" enctype='multipart/form-data'>
+							<div class="form-group row" id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="idTema" placeholder="">Codigo del curso a borrar</label>
+								<div class="col-sm-4">
+									<input class="form-control" placeholder="" type="text" name="unCodCurso" id="idCurso" required>
+									<small id="" class="form-text text-muted">ver el codigo del curso en la seccion Cursos</small></br>
+								</div>
+							</div>
+							<div class="form-group row " id="formularioAdmin">
+								<label class="col-sm-3 col-form-label" for="unaPassword1" >Contraseña de Admin.</label>
+								<div class="col-sm-4">
+									<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+									<small id="" class="form-text text-muted">entre 6 y 8 caracteres</small>
+								</div>
+							</div>
+							<input type="submit" id="BorrarCurso" value="Borrar" class="btn btn-sm enlace">
+						</form>
+				</div>
+			</div>
+		</div>

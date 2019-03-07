@@ -1,0 +1,51 @@
+			<div id="SubirApunte">
+			<h2>Subir un apunte</h2>
+				<h6 >¡¡¡Atención!!! : puede subirse primero el apunte al sitio  www.mediafire.com  con el usuario: <strong>comunidad.una.visuales@gmail.com</strong>
+				 y el password: <strong>unavisuales0+*</strong></h6>
+				 <br/>
+				<form class="form-horizontal" id="unFormulario2" action="/Seccion/IrAApuntes/upload/0" method="POST">
+					<fieldset>
+					<div class="form-group row">
+						<label for="titulo" class="col-sm-2 col-form-label control-label">Titulo:</label>
+						<div class="" id="">
+							<input type="text" name="unTitulo" id="titulo2" placeholder="titulo del apunte" maxLength=100></br>
+							<small id="avisoTitulo" class="form-text text-muted"></small>
+						</div>
+					</div>						
+						
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label control-label" for="autor">Autor:</label>
+						<div class="" id="">
+							<input type="text" name="unAutor" id="autor2" placeholder="un autor del apunte" maxLength=100>
+							<small id="avisoAutor" class="form-text text-muted"></small>
+						</div>
+					</div>
+					
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label control-label" for="materia">Materia:</label>
+						<select class="" id="materia" name="unaMateria">
+							{listaDeMaterias}
+						</select>
+					</div>
+
+                                        <div class="form-group row" >
+						<label class="col-sm-2 col-form-label control-label" for="catedra">Catedra:</label>
+						<div class="" id="">
+							<input type="text" name="unaCatedra" id="catedra" placeholder="catedra de la materia" maxLength=60>
+							<small id="" class="form-text text-muted"></small>
+						</div>
+					</div>
+					
+					<div class="form-group row" >
+						<label class="col-sm-2 col-form-label control-label" for="ubicacionUrl">Link al apunte:</label>
+						<div class="" id="">
+							<input type="text" name="unaUbicacionUrl" id="ubicacionUrl" placeholder="direccion web del apunte" maxLength=170>
+							<small id="avisoAutor" class="form-text text-muted">inserta el link a la pagina en donde se encuentra el apunte</small>
+						</div>
+					</div>
+
+					</br>
+					<input type="submit" id="iniciarSesion" value="Subir" class="btn btn-secondary enlace">
+				</fieldset>
+				</form>
+			</div>

@@ -1,0 +1,19 @@
+<form class="form-horizontal" id="unFormulario" action="/RegistrarUsuario/ConfigPerfil/cambiarMail" method="POST" enctype="multipart/form-data">
+    <div class="form-group row" id="">
+	  <label class="" for="mail" placeholder="asegurate que es correcto">Mail:</label>
+	  <div class="">
+		<input type="email" class="form-control" name="unMail" placeholder="asegurate que es correcto" id="mail" required>
+		<small id="avisoMail" class="form-text text-muted">a esta direccion te enviaremos la confirmacion de tu cambio</small></br>
+	  </div>
+   </div>
+
+   <div class="form-group row " id="formularioRegistro">
+	  <label class="" for="unaPassword1" >Contraseña:</label>
+	  <div class="">
+		<input type="password" class="form-control" name="unaPassword1" placeholder="ingresa tu contraseña" id="password1" required>
+		<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+	  </div>
+   </div>
+
+   <input type="submit" id="Registrame" value="Listo" class="btn btn-primary bg-dark">
+</form>

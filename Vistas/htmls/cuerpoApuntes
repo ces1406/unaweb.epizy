@@ -1,0 +1,21 @@
+<div class="card text-white bg-dark col-sm-{colIzq}" id="panelIzq" >
+	<img class="card-img-top" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+	<div class="card-body" id="curpoDelBox0">
+		<h1>Apuntes</h1>
+		<img src="/Vistas/imagenes/separador.png" class="separador">
+		<br>
+		<div class="media-body">
+			<div id="BuscarApunte">
+				{busquedaApuntes}
+			</div>
+			<img src="/Vistas/imagenes/separador.png" class="separador">
+			{subidaDeApuntes}
+				
+		</div>
+	</div>	
+	
+	<div class="card-footer" id="pieIzq">
+		<small class="text-muted">apuntes de la una</small>
+	</div>	
+	
+</div>

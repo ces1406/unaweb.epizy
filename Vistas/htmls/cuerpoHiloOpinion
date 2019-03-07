@@ -1,0 +1,26 @@
+<div class="card text-white bg-dark col-sm-{colIzq}" id="panelIzq" >
+	<img class="card-img-top" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+	<div class="card-body" id="opinionesInicio">
+		<h1>Opiniones y recomendaciones de cátedras</h1>
+		<img src="/Vistas/imagenes/separador.png" class="separador">
+		<br>
+		<div class="media-body">
+			<div id="comentarioInicial" class="contenedor0">
+				{catedra}
+			</div>
+			<img src="/Vistas/imagenes/separador.png" class="separador">
+			<div id="opinionesCargadas">
+				<h3>Opiniones</h3>
+				{listaOpiniones}
+				{paginacion}
+				{tieneSesion}
+			</div>	
+			<img src="/Vistas/imagenes/separador.png" class="separador">
+		</div>
+	</div>	
+	
+	<div class="card-footer" id="pieIzq">
+		<small class="text-muted">cursos de la una</small>
+	</div>	
+	
+</div>

@@ -1,0 +1,18 @@
+<form class="form-horizontal" id="unFormulario" action="/RegistrarUsuario/ConfigPerfil/subirImg" method="POST" enctype="multipart/form-data">
+	<div class="form-group row " id="">
+		<label for="unArchImg" ><h5>Subir otra imagen:</h5></label>
+		<div>
+			<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+			<input name="unImg" type="file"  id="unArchImg">
+			<small id="avisoImg" class="form-text text-muted"> imagen (jpg, jpeg, png, gif) que no supere los 100 KB</small>
+		</div>
+	</div>
+    <div class="form-group row " id="">
+		<label class="" for="unaPassword1" >Confirma tu contraseña:</label>
+		<div class="">
+			<input type="password" class="form-control" name="unaPassword1" id="password1" required>
+			<small id="avisoPass1" class="form-text text-muted">entre 6 y 8 caracteres</small>
+		</div>
+	</div>
+	<input type="submit" id="Registrame" value="Listo" class="btn btn-sm enlace">
+</form>	

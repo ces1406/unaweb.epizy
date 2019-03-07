@@ -1,0 +1,40 @@
+<h2>Perfil personal en Web UNA</h2><br/><br/>
+<div class="card-deck">
+		<div class="card text-white bg-dark contenedor0">
+  			<img class="img-fluid img-thumbnail" id="imgUser" alt="Card image cap" src="/Vistas/<?php if(!empty($_SESSION['img'])){echo 'imagenesUsers/'.$_SESSION['img'];}else{echo '';} ?>">
+    		<div class="card-body">
+      			<h5 class="card-title">Imagen de Usuario</h5>
+      			<p class="card-text">Puedes subir una imagen que te identifique como usuario o cambiar la que ya tenias.</p>
+       			{submenuCambiarImg}
+       		</div>	
+    		<div class="card-footer">
+     			<small class="text-muted">Modificaciones</small>
+    		</div>
+  		</div>
+  		
+  	<div class="card text-white bg-dark contenedor0">
+    	<div class="card-body">
+      		<ul class="list-group list-group-flush">
+    			<li class="list-group-item bg-dark">Apodo: {apodo}</li>
+    			<li class="list-group-item bg-dark">Mail: {mail}</li>
+    			<li class="list-group-item bg-dark">Facebook: {facebook}</li>
+				<li class="list-group-item bg-dark">Pagina personal, vlog, u otro: {redSocial1}</li>
+  			</ul>
+    	</div>
+    	<div class="card-footer">
+      		<small class="text-muted">Datos personales</small>
+    	</div>
+  	</div>
+  	
+  	<div class="card text-white bg-dark contenedor0">
+    	<div class="card-body">
+      		<ul class="list-group list-group-flush">
+      			{submenuPassyMail}
+      		</ul>
+    	</div>
+    	<div class="card-footer">
+      		<small class="text-muted">Modificiones</small>
+    	</div>
+  	</div>
+
+</div>

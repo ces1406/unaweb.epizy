@@ -1,0 +1,10 @@
+	<footer class="footer" id="pie">
+		<div class="container">
+					<a class="btn btn-secondary enlace" href="<?php echo LINK_TWITTER ?>"><img src="/Vistas/imagenes/twitter.png" class="icono3">&nbsp;Twitter</a>
+					<a class="btn btn-secondary enlace" href="<?php echo LINK_FACEBOOK ?>"><img src="/Vistas/imagenes/facebook.png" class="icono3">&nbsp;Facebook</a>
+					<a class="btn btn-secondary enlace" href="<?php echo LINK_YOUTUBE ?>"><img src="/Vistas/imagenes/youtube.png" class="icono3">&nbsp;Canal de Youtube</a>
+		</div>
+	</footer>
+</div>
+   
+</body>

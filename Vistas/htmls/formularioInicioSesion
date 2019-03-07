@@ -1,0 +1,20 @@
+<form class="form-horizontal" id="inicioSesion" action="/Sesion/ReconocerSesion" method="POST">
+	<fieldset>
+	<div class="form-group row">
+		<label for="apodo" class="col-sm-2 col-form-label control-label">Apodo:</label>
+		<div class="col-sm-4" id="apodo1">
+			<input type="text" name="unApodo" id="apodo" placeholder="de 1 a 25 caracteres" maxLength=25></br>
+			<small id="avisoApodo" class="form-text text-muted"></small>
+		</div>
+	</div>						
+						
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="unaPassword">Password:</label>
+		<div class="col-sm-4" id="password1">
+			<input type="password" name="unaPassword" id="password" placeholder="entre 5 y 8 caracteres" maxLength=8>
+			<a  href="/RegistrarUsuario/IniciarRecupPass"><small id="avisoPass" class="form-text ">( OLVIDE MI CONTRASEÑA )</small></a>
+		</div>
+	</div>
+	<input type="submit" id="iniciarSesion" value="Listo" class="btn btn-secondary enlace">
+	</fieldset>
+</form>

@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule ^(.*)\.css$ $1.css [L]
+RewriteRule ^(.*)\.png$ $1.png [L]
+RewriteRule ^(.*)\.jpg$ $1.jpg [L]
+RewriteRule ^(.*)\.jpeg$ $1.jpeg [L]
+RewriteRule ^(.*)\.js$ $1.js [L]
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f 
+#RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php?args=$1 [QSA,NS,L]

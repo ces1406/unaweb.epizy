@@ -1,0 +1,86 @@
+<h2>Busqueda de cursos creados</h2>
+<h6>(tener en cuenta que si se dejan todas las opciones en blanco se listarán todos foros de cursos creados)</h6>
+<br/>
+<form class="form-horizontal" id="unFormulario1" action="/Seccion/CursosCatedras/search" method="POST">
+	<fieldset>
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="materia1">Materia:</label>
+		<select class="" id="materia1" name="unaMateria">
+			{listaDeMaterias}
+		</select>
+	</div>
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="catedra1">Cátedra:</label>
+		<div class="" id="">
+			<input type="text" name="unaCatedra" id="catedra1" placeholder="nombre de la cátedra" maxLength=60>
+			<small id="avisoCatedra" class="form-text text-muted"></small>
+		</div>
+	</div>						
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="codigo1">Cod. de curso/comision:</label>
+		<div class="" id="">
+			<input type="text" name="unCodigo" id="codigo1" placeholder="codigo del curso" maxLength=15>
+			<small id="avisoCodigo" class="form-text text-muted"></small>
+		</div>
+	</div>
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="sede1">Sede del curso:</label>
+		<div class="" id="">
+			<input type="text" name="unaSede" id="sede1" placeholder="sede del curso" maxLength=30>
+			<small id="avisoSede" class="form-text text-muted"></small>
+		</div>
+	</div>
+<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="sede2">D&iacute;as de cursada:</label>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="lun" name="1">
+  			<label class="form-check-label" for="checkboxLun">lunes</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="mar" name="2">
+  			<label class="form-check-label" for="checkboxLun">martes</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="mie" name="3">
+  			<label class="form-check-label" for="checkboxLun">miercoles</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="jue" name="4">
+  			<label class="form-check-label" for="checkboxLun">jueves</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="vie" name="5">
+  			<label class="form-check-label" for="checkboxLun">viernes</label>
+		</div>
+		<div class="form-check form-check-inline">
+  			<input class="form-check-input" type="checkbox" id="checkboxLun" value="sab" name="6">
+  			<label class="form-check-label" for="checkboxLun">sabados</label>
+		</div>
+		
+	</div>
+	<div class="form-group row" >
+		<label class="col-sm-2 col-form-label control-label" for="horario1">Horario del curso:</label>
+		<div class="" id="horario1">
+			<select class="" id="horaInicio" name="horaInicio">
+				<option></option>
+				{hora}
+			</select> <strong>:</strong>
+			<select class="" id="MinInicio"  name="minInicio">
+				<option></option>
+				{minuto}
+			</select>
+			&nbsp;a &nbsp;
+			<select class="" id="horaFin"    name="horaFin">
+				<option></option>
+				{hora}
+			</select> <strong>:</strong>
+			<select class="" id="MinFin"     name="minFin">
+				<option></option>
+				{minuto}
+			</select>
+		</div>
+	</div>
+	
+	<input type="submit" id="" value="Buscar" class="btn btn-secondary enlace">
+	</fieldset>
+</form>

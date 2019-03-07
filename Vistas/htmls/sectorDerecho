@@ -1,0 +1,11 @@
+<div class="card text-white bg-dark col-sm-{colDer} plano1" id="panelDer" >
+	<img class="card-img-top separador" src="/Vistas/imagenes/item11.png" height="35" alt="Card image cap">
+	<div class="card-body" >
+		<h1 class="card-title text-center">{tituloDer}</h1>
+		<img class="card-img-top separador" src="/Vistas/imagenes/item11.png" height="35" alt="Card image cap">
+		{panelDer}
+	</div>
+	<div class="card-footer" id="pieDer">
+		<small class="text-muted">{pieDer}</small>
+	</div>
+</div>

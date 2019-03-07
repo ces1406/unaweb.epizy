@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800');
+
+/*GENERALES(APLICABLES A TODO EL SITIO)*/
+*{
+	  font-family: 'Montserrat', sans-serif;
+}
+h1{
+	color: #EFECEA;
+	font-size: 3.3ex;
+	font-weight: 300 !important;
+}
+h2{
+	color: #EFECEA;
+	font-size: 2.2ex;
+}
+h3{
+	color: #EFECEA;
+	font-size: 1.7ex;
+}
+h4{
+	color: #EFECEA;
+	font-size: 1.5ex;
+}
+h5{
+	color: #EFECEA;
+	font-size: 1.4ex;
+}
+h6{
+	color: #EFECEA;
+	font-size: 1.35ex;
+}
+p{
+	color: #EFDCEA;
+	font-size: 1.5ex;
+}
+small{
+	color: #EFDCEA;
+	font-size: 1.3ex !important;
+	padding: 0ex 0ex 0ex 0ex !important;
+	margin: 0ex 0ex 0ex 0ex !important;
+}
+a{
+	text-decoration: none !important;
+	color:#e4f7ff!important;
+}
+a:link ,a:visted{
+	text-decoration: none !important;
+	color:#FFFFFF!important;
+}
+a:focus, a:active{
+	outline: 0;
+}
+a:hover{
+	text-decoration: none !important;
+}
+.btn{
+	background-color:#293238;
+	color: #FFFFFF;
+	border-style:solid solid solid solid;
+	border-radius:0.7ex;
+	border-color:#755B2D;
+	border-width:0.23ex;
+}
+.btn:link ,.btn:visted{
+	text-decoration: none !important;
+	color:#FFFFFF!important;
+}
+.btn:hover{
+	text-decoration: none !important;
+}
+
+/*CABECERA DEL SITIO*/
+.plano1 {
+	background-color: rgba(22, 22, 33, 0.88)!important;
+}
+#cabecera{
+	border-style: solid solid solid solid !important;
+	border-color:rgb(18,18,28) !important;
+	border-width: 0.2ex !important;
+	padding: 0ex 0ex 0ex 0ex !important;
+	margin: 0ex 0ex 0ex 0ex !important;
+}
+#tituloPagina{
+	font-size: 5.4ex;
+	font-weight: 500;
+	margin:0ex 0ex 0ex 0ex !important;
+	text-shadow: 1px 4px #798E48;
+}
+#logoUser{
+	border-style: solid solid solid solid !important;
+	border-radius: 0.8ex !important;
+	border-color: #665c3f !important;
+	border-width: 0.4ex !important;
+	width:76px;
+	height:76px;
+}
+#busqEnSitio{
+	padding: 0.5ex 0ex 0ex 0ex !important;
+	margin: 0ex 0ex 0ex 5ex !important;
+	line-height:0.9 !important;
+}
+
+/*CUERPO DEL SITIO*/
+#cuerpo{
+	background-color: rgba(31,36,45,0.68)!important;
+}
+body{
+	background-image: url("/Vistas/imagenes/pollock4.jpg"); 
+	background-size: auto;
+	margin: 0ex 0ex 0ex 0ex;
+	padding: 0ex 0ex 0ex 0ex;
+}
+.li0{
+	margin: 0.5ex 0.5ex 0.5ex 0.5ex !important;
+	padding: 0.5ex 0ex 0.5ex 1.0ex !important;
+	border-radius: 0.8ex;
+	border-style:solid solid solid solid !important;
+	border-color:rgba(25,30,40,1) !important;
+	border-width: 0.3ex;
+}  
+.li0 a{
+	font-size: 2.7ex;	
+	font-weight: 400 !important;
+}
+.li0 h6{
+	font-size: 1.3ex;
+	font-weight: 400;
+	margin: 0ex 0ex 0ex 2ex;
+	padding: 0ex 1ex 0ex 2ex;
+}
+.separador {
+	width:100%;
+	height:1.9ex;
+}
+#panelIzq, #panelDer{
+	border-style: solid solid solid solid !important;
+	border-radius: 1.5ex !important;
+	border-color:rgb(18,18,28) !important;
+	border-width: 0.3ex !important;
+	padding: 0ex 0ex 0ex 0ex !important;
+	background-color: rgba(31,36,45,0.88)!important;
+}
+/* PANEL DERECHO (ULTIMOS COMENTS,)*/
+#ultimosComentarios a{
+	line-height:1.2 !important;
+	margin: 1ex 1ex 0ex 1ex;
+	padding: 1ex 1ex 0ex 1ex;
+}
+.esquinaIzq2 { /* el Autor*/
+	font-size: 2.0ex;
+	font-weight: 400;
+	display: inline !important;
+}
+
+.contenido2 p{
+	font-size: 1.50ex;
+	font-weight: 400;
+	color: rgb(239, 245, 203) !important;
+}
+.esquinaDer2{
+	float: right !important;
+}
+.enlace:hover, #panelDer .enlace:hover{
+	text-decoration: none !important;
+	color:#c6ccd4 !important;
+	background-color: rgba(21, 24, 29, 0.9) !important;
+}
+/*SECCION-TEMAS*/
+.panel1{
+	background-color: rgba(18,18,28,0.6)!important;
+	color: #EFECEA;
+}
+.icono1{   /*imagen de quien inicio cierto tema*/
+	border-style: solid solid solid solid !important;
+	border-radius: 0.9ex !important;
+	border-color: #bb8f35!important;
+	border-width: 0.3ex !important;
+	width:85px;
+	height:85px;
+}
+.contenedor0{ /* comentario inicial del tema*/
+	background-color: rgba(52,57,66,0.90)!important;
+	padding: 0.6ex 0.4ex 0.4ex 0.6ex !important;
+	border-radius: 2.0ex !important;
+}
+.contenedor1{
+	background-color: rgb(243, 244, 245)!important;
+	border-radius: 1.5ex !important;
+}
+.icono2 {   /* imagen de quien comenta un tema*/
+	border-style: solid solid solid solid !important;
+	border-radius: 0.6ex !important;
+	border-color: #886a2e!important;
+	border-width: 0.2ex !important;
+	width:55px;
+	height:55px;
+}
+.icono3 {
+	width:35px;
+	height:35px;
+}
+.tabla2 {
+	font-size: 1.5ex;
+	font-weight: 400;
+	margin: 0ex 0ex 0ex 0ex;
+	padding: 0ex 1ex 0ex 0ex;
+}
+.comentario1{
+	font-size: 1.3ex !important;
+	padding: 0.2ex 0.4ex 0ex 0.8ex !important;
+	margin: 0.2ex 0.2ex 0.2ex 0.3ex;
+	border-radius: 1.5ex !important;
+	background-color: rgb(243, 244, 245)!important;
+	color:#000000 !important;
+	line-height:1.2 !important;
+}
+.comentario1 p{
+	font-size: 2.4ex!important;
+	color:#000000 !important;
+	padding: 0ex 0ex 0ex 0ex !important;
+	margin: 0ex 0ex 0ex 0ex !important;
+}
+#comentarioActual{
+	margin: 0.2ex 0.2ex 0.2ex 0.3ex !important;
+}
+.media-left{ /* sector imagen y nombre de usuario en los comentarios*/
+	margin: 0.2ex 2.4ex 0.2ex 0ex !important;
+}
+.page-item a{
+	background-color:#293238;
+	color: #FFFFFF;
+	border-style:solid solid solid solid;
+	border-radius:0.4ex;
+	border-color:#755B2D;
+	border-width:0.23ex;
+}
+/*PIE DEL SITIO*/
+#pie {
+	background-color: rgba(18,18,28,0.6)!important;
+	padding: 1ex 0ex 0ex 0ex;
+}
+#pie button {
+	background-color: rgba(18,18,28,0.8)!important;
+	padding: 0.4ex 0.4ex 0.4ex 0.4ex;
+
+}

@@ -1,0 +1,13 @@
+<form class="form-horizontal" id="unFormulario" action="/RegistrarUsuario/RecuperarPass" method="POST">
+	<fieldset>
+		<div class="form-group row">
+			<label for="apodo" class="col-sm-2 col-form-label control-label">Apodo:</label>
+			<div class="col-sm-4" id="apodo1">
+				<input type="text" name="unApodo" id="apodo" placeholder="de 1 a 8 caracteres"></br>
+				<small id="avisoApodo" class="form-text text-muted">indica tu apodo y te enviaremos tu password a tu mail</small>
+			</div>
+		</div>						
+		</br>
+		<input type="submit" id="recuperarPass" value="Listo" class="btn btn-secondary enlace">
+	</fieldset>
+</form>

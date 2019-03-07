@@ -1,0 +1,21 @@
+
+<div class="card text-white bg-dark col-sm-{colIzq}" id="panelIzq" >
+	<img class="card-img-top separador" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+	<div class="card-body">
+		<h1>Secci&oacute;n: {nombreSeccion}</h1>
+		<img class="card-img-top separador" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+		{tieneSesion}
+		<img class="card-img-top separador" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+		<h2>Temas:</h2>
+		<div id="menu0">
+			<ul class="navbar-nav" id="listaTemas">
+				{listaTemas}
+				{paginacion}
+			</ul>
+		</div>
+	</div>
+	<div class="card-footer" id="pieIzq">
+		<small class="text-muted">{pieIzq}</small>
+	</div>
+</div>
+

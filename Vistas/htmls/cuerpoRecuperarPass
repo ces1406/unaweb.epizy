@@ -1,0 +1,21 @@
+	<div id="cuerpo">
+		<section>
+			<form class="form-horizontal" id="inicioSesion" action="/RegistrarUsuario/RecuperarPass" method="POST">
+				<fieldset>
+					<h1>Recuperar la contraseña de Web UNA</h1>
+					<div class="form-group row">
+						<label for="apodo" class="col-sm-1 col-form-label control-label">Apodo:</label>
+						<div class="col-sm-4" id="apodo1">
+							<input type="text" name="unApodo" id="apodo" placeholder="de 1 a 8 caracteres"></br>
+							<small id="avisoApodo" class="form-text text-muted">indica tu apodo y te enviaremos tu password a tu mail</small>
+						</div>
+					</div>						
+
+					</br>
+					</br>
+					<input type="submit" id="recuperarPass" value="Listo">
+				
+				</fieldset>
+			</form>
+		</section>
+</div>

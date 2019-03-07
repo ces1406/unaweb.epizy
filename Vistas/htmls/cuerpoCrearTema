@@ -1,0 +1,55 @@
+	<div class="card text-white bg-dark col-sm-{colIzq}" id="panelIzq" >
+		<img class="card-img-top" src="/Vistas/imagenes/item12.png" height="35" alt="Card image cap">
+		<div clas="card-body">
+			<form class="form-horizontal" id="crearUnTema" action="/Seccion/CrearTemaUna/{idSeccion}/{nombreSeccion}" method="POST">
+				<fieldset>
+					<h1>Crear un tema en UNA web</h1>
+					
+					<br/>
+					
+					<div class="form-group row" id="formularioRegistro">
+						<label class="col-sm-1 col-form-label" for="titulo" placeholder="titulo del tema">T&iacute;tulo:</label>
+						<div class="col-sm-10">
+							<input type="text" name="unTitulo" id="titulo"><br>
+							<small id="" class="form-text text-muted">el titulo del tema que iniciar&aacute;s</small>
+						</div>
+					</div>
+					
+					<h2>Indica tres palabras que se relacionen con el Tema (para búsquedas en el sitio)</h2>
+					
+					<div class="form-group row" id="formularioRegistro">
+						<label class="col-sm-2 col-form-label" for="palabra1" placeholder="una palabra para busquedas">Palabra1:</label>
+						<div class="col-sm-4">
+							<input type="text" name="unaPalabra1" id="palabra1"><br>
+						</div>
+					</div>
+					
+					<div class="form-group row" id="formularioRegistro">
+						<label class="col-sm-2 col-form-label" for="palabra2" placeholder="una palabra para busquedas">Palabra2:</label>
+						<div class="col-sm-4">
+							<input type="text" name="unaPalabra2" id="palabra2"><br>
+						</div>
+					</div>
+					
+					<div class="form-group row" id="formularioRegistro">
+						<label class="col-sm-2 col-form-label" for="palabra3" placeholder="una palabra para busquedas">Palabra3:</label>
+						<div class="col-sm-4">
+							<input type="text" name="unaPalabra3" id="palabra3"><br>
+						</div>
+					</div>
+					
+					<div class="form-group row" id="formularioRegistro">
+						<label class="col-sm-2 col-form-label" for="comentarioInicial" placeholder="comentario inicial del tema">Comentario inicial:</label>
+						<div class="col-sm-10">
+							<textarea name="unComentarioInicial" id="area1">
+							</textarea><br>
+						</div>
+					</div>
+					<input type="submit" id="CrearTema" value="Iniciar el Tema" class="btn btn-secondary enlace">
+				</fieldset>
+			</form>
+		</div>
+		<div class="card-footer" id="pieIzq">
+			<small class="text-muted">Creando un nueva tema en esta seccion</small>
+		</div>
+	</div>

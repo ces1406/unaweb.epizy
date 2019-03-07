@@ -1,0 +1,29 @@
+	<div class="container">
+	<div id="cuerpo">
+		<section>
+			<nav class="navbar">
+				<!--div class="row"-->
+					<div class="col-sm-8  float-left" >
+						<h1></h1>
+						<div id="menu0">
+							<ul class="navbar-nav " id="menu1">
+							{listaSecciones}
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-sm-4 float-right align-self-end" >
+						<aside >
+							<div id="ultimosComents">
+								<h2>Ultimos comentarios</h2>
+								<ul class="navbar-nav" id="ultimosComents0">
+								</ul>
+							</div>
+						</aside>
+					</div>
+	
+			</nav>
+		</section>
+	</div>
+
+	<div style="clear: both;"></div>
